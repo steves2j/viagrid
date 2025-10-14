@@ -60,8 +60,8 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
 
     ![](img/tracing.gif)
 
-    > [!WARNING]
-    > If you're feeling like it's impossible to get the rectangle perfectly illuminating in all four corners, it's likely you need to recalibrate your lens, or adjust the scale of your laser. TODO Links for omni 1 for this
+> [!WARNING]
+> If you're feeling like it's impossible to get the rectangle perfectly illuminating in all four corners, it's likely you need to recalibrate your lens, or adjust the scale of your laser. TODO Links for omni 1 for this
 
 12. Tighten down the thumbscrews.
 13. The alignment jig is now calibrated to your Viagrid lightburn job. Save the job and use this for all future etchings.
