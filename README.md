@@ -11,8 +11,8 @@ When it comes time to fabricate your board, all that needs to happen is remove c
 
 ![](img/vg_assembled.JPG)
 
-!!! "ECAD Software"
-    Viagrid has templates and instructions for only KiCAD and Eagle at the moment.
+> [!NOTE] ECAD Software
+> Viagrid has templates and instructions for only KiCAD and Eagle at the moment.
 
 ## File Prep
 
@@ -62,8 +62,8 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
 
     ![](img/tracing.gif)
 
-    !!! "If you can't get it aligned"
-        If you're feeling like it's impossible to get the rectangle perfectly illuminating in all four corners, it's likely you need to recalibrate your lens, or adjust the scale of your laser. TODO Links for omni 1 for this
+    > [!WARNING] If you can't get it aligned
+    > If you're feeling like it's impossible to get the rectangle perfectly illuminating in all four corners, it's likely you need to recalibrate your lens, or adjust the scale of your laser. TODO Links for omni 1 for this
 
 12. Tighten down the thumbscrews.
 13. The alignment jig is now calibrated to your Viagrid lightburn job. Save the job and use this for all future etchings.
