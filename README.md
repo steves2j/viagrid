@@ -7,14 +7,14 @@ Viagrid is a PCB template that allows for rapid PCB prototyping with 2-layer boa
 
 When doing board layout, you drop your components onto the Viagrid template file. This shows you where the Viagrid blank already has vias embedded. When routing your board, simply drop your vias only where the Viagrid blank already has them.
 
-When it comes time to fabricate your board, all that needs to happen is remove copper from the top and bottom layers, effectively deciding which net the vias are part of. This process can be done using acid etching, UV DPSS lasers, or CNC machining.
+When it comes time to fabricate your board, you only have to remove copper from the top and bottom layers, effectively deciding which net the vias are part of. This process can be done using acid etching, UV DPSS lasers, or CNC machining.
 
 ![](img/vg_assembled.JPG)
 
+## File Prep
+
 > [!NOTE]
 > Viagrid has templates and instructions for only KiCAD and Eagle at the moment.
-
-## File Prep
 
 ### Design
 
@@ -61,19 +61,19 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
     ![](img/tracing.gif)
 
 > [!WARNING]
-> If you're feeling like it's impossible to get the rectangle perfectly illuminating in all four corners, it's likely you need to recalibrate your lens, or adjust the scale of your laser. TODO Links for omni 1 for this
+> If you're feeling like it's impossible to get the rectangle perfectly illuminating in all four corners, it's likely you need to recalibrate your lens, or adjust the scale of your laser.
 
-12. Tighten down the thumbscrews.
-13. The alignment jig is now calibrated to your Viagrid lightburn job. Save the job and use this for all future etchings.
+1.  Tighten down the thumbscrews.
+2.  The alignment jig is now calibrated to your Viagrid lightburn job. Save the job and use this for all future etchings.
 
 #### Running a job
 
-1. drop in top copper
-2. make sure that shit is the right size (put sizes here and how to adjust)
-3. make inner bits layer 1, outer ring layer 30.
-4. group it
-5. snap it onto locked outline
-6. cut that bad boi with settings
+1. Drop in top copper DXF file.
+2. Make sure your imported board is the right size (90mm x 55mm)
+3. Make inner bits layer 1, outer ring layer 30.
+4. Group it.
+5. Snap it onto locked outline.
+6. Cut layer one with settings:
 
     - Speed: 100mm/s
     - Frequency: 35kHz
@@ -86,13 +86,17 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
     - Angle Increment: 37deg
     - Fill all shapes at once: checked
 
-7. stop after layer one, you aligned?
-8. stop part way through and check, is your laser beefy and you're already done?
-9. remove from jig
-10. Sand down with 600 grit
+7. Stop after layer one, and double check alignment. Are all your vias aligned with the traces?
+8. Stop part way through and check, is your laser beefy and you're already done? Monitor the first job and how many passes you actually need to get through.
+9. When done, remove from jig.
+10. Sand down with 600 grit.
 11. Inspect traces under a microscope and using a multimeter to ensure proper electrical isolation for all traces.
 
     ![](img/trace_CU.JPG)
+
+12. Put back in jig upside down
+13. Get back copper in there, make sure it's flipped!
+14. Cut the back side.
 
 ### Etching Method
 
