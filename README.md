@@ -118,7 +118,7 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
 
 <img width="800" alt="imertertage" src="https://github.com/user-attachments/assets/0667c8cc-8197-459f-8953-c6816b8f782f" /><br>
 
-To start off with, you don't have to be an electronics or chemical engineer to chemical etch your own PCBs at home or business. It's easy and safe if you are careful, if you can follow instructions and if you take your time. With that said:
+To start off with, you don't have to be an electronics or chemical engineer to chemical etch your own PCBs at home or small business. It's easy and safe if you are careful, if you can follow instructions and if you take your time. With that said:
 
 > [!WARNING]
 > Chemical etching of any PCB does require the use of certain chemicals which can be unsafe if not handled and disposed of properly. Generally, these will be FeCl3 (ferric chloride), NaOH (sodium hydroxide, commonly known as lye) and liquid tin. Do not mix chemicals, and always wear the proper PPE and follow all handling instructions recommended by the manufacturers of the equipment and chemicals you are using!
@@ -142,7 +142,7 @@ Chemical etching of PCBs can be broken down into these steps:
 
 ### Photoresist and Artwork Masks
 
-<img width="800" alt="imertertage" src="https://github.com/user-attachments/assets/dfce08d8-01f1-4669-888e-917d4f2ec660" /><br>
+<img width="800" alt="imertertage" src="https://github.com/user-attachments/assets/b2602f18-5c2c-46bd-9667-10b0108d47ee" /><br>
 
 When chemically etching PCBs, a protective layer must exist over the copper areas we wish to keep. This is accomplished with a UV-sensitive acrylic polymer film, otherwise known as a UV photoresist. Both negative and positive photoresists exist. In simple terms, negative photoresist will "harden" when exposed to UV light, so the light must hit the areas of copper we wish to keep. Positive photoresist will "soften" when exposed to UV light, so the light must hit the areas of copper we wish to remove. Both types of coatings can achieve excellent detail and resolution if properly applied and exposed, and will never be the limiting factor for the quality of your DIY PCBs. Photoresist films are capable of tenting even large holes (>= ⌀5mm) and will easily protect the vias from etching.
 
