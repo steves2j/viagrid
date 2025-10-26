@@ -2,12 +2,19 @@
 
 Viagrid is a PCB template that allows for rapid PCB prototyping with 2-layer boards and factory-made vias. The blank boards have a standardized array of vias already in them; you just select which net they're connected to by cutting out the front and back layers of your board.
 
+## Table of Contents
+[File Prep](#file-prep)<br>
+[Design](#design)<br>
+[File Export](#file-export)<br>
+[Fabrication Methods](#fabrication-methods)
+<br><br>
+
 ![](img/vg_blank.JPG)
 ![](img/vg_cut.JPG)
 
 When doing board layout, you drop your components onto the Viagrid template file. This shows you where the Viagrid blank already has vias embedded. When routing your board, simply drop your vias only where the Viagrid blank already has them.
 
-When it comes time to fabricate your board, you only have to remove copper from the top and bottom layers, effectively deciding which net the vias are part of. This process can be done using acid etching, UV DPSS lasers, or CNC machining.
+When it comes time to fabricate your board, you only have to remove copper from the top and bottom layers, effectively deciding which net the vias are part of. This process can be done using UV DPSS lasers, chemical etching or CNC machining.
 
 ![](img/vg_assembled.JPG)
 
@@ -16,7 +23,7 @@ When it comes time to fabricate your board, you only have to remove copper from 
 > [!NOTE]
 > Viagrid has templates and instructions for only KiCAD and Eagle at the moment.
 
-### Design
+## Design
 
 1. Design your schematic in KiCAD like you usually would. Assign footprints.
 2. Before opening the .kicad_pcb file associated with your project, copy the `viagrid-template.kicad_pcb` file into your KiCAD project directory, and rename it to replace the default one.
@@ -27,15 +34,20 @@ When it comes time to fabricate your board, you only have to remove copper from 
    3. Copper pour: at least 0.3mm clearance
 5. Route your board like you normally would.
 
-### Export
+## File Export
 
 1. File -> Plot
 2. When exporting, we only care about the front and back copper layers, and the front and back mask layers. Select these.
 3. Export files as .DXF
 
-## Fabrication
+## Fabrication Methods
 
-### UV DPSS Laser Engraving Method
+[UV DPSS Laser Engraving](#uv-dpss-laser-engraving)<br>
+[Chemical Etching](#chemical-etching)<br>
+[CNC Machining](#cnc-machining)<br>
+<br/>
+
+### UV DPSS Laser Engraving
 
 Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped Solid State) laser. These are commercially available and getting cheaper by the year. These instructions were prepared using a [Commarker Omni 1 (5W)](https://store.commarker.com/products/omni-1-uv-laser-engraver) however the same company has recently released a similar machine that is fully enclosed, called the [Omni X](https://store.commarker.com/products/omni-x-uv-laser-engraver).
 
@@ -98,11 +110,11 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
 13. Get back copper in there, make sure it's flipped!
 14. Cut the back side.
 
-## Chemical Etching Method
+### Chemical Etching
 
 <img width="800" height="1084" alt="image" src="https://github.com/user-attachments/assets/33eb7831-7800-4c81-b7b4-91c7fdae6651" /><br>
 
-### Achieveable Results:
+#### Achieveable Results:
 - *3mil traces.*
 - *3mil spaces.*
 - *Soldermask possible.*
@@ -114,7 +126,7 @@ Viagrid boards can be easily and autonomously cut using a UV DPSS (Diode Pumped 
 
 #### *This documentation is a work in progress and is subject to change. Additional information and photos will be added over time.*
 
-### Overview
+#### Overview
 
 <img width="800" alt="imertertage" src="https://github.com/user-attachments/assets/0667c8cc-8197-459f-8953-c6816b8f782f" /><br>
 
@@ -140,7 +152,7 @@ Chemical etching of PCBs can be broken down into these steps:
 > [!NOTE]
 > When handling PCBs coated in UV photoresists or soldermasks, it is important to limit unintended exposure to UV as much as possible. It is recommended to work in a room lit with incandescent bulbs or white LED lighting. Sunlight, halogen bulbs and incandescent bulbs put out enough UV to cure photoresist in only a few minutes. For extended handling periods, it is recommended to install UV-free LED bulbs, such as the yellow "bug-free" bulbs that are generally available.
 
-### Photoresist and Artwork Masks
+#### Photoresist and Artwork Masks
 
 <img width="800" alt="imertertage" src="https://github.com/user-attachments/assets/b2602f18-5c2c-46bd-9667-10b0108d47ee" /><br>
 
@@ -157,7 +169,7 @@ Once the artwork masks are created, we must place them on the PCB. It is easiest
 > [!NOTE]
 > Viagrid blanks which are shipped pre-coated with negative UV photoresist and ready for immediate use with chemical etching are in late-stage development. Several hundred have already been produced. A purpose-built, open source masking and exposure machine based on SLA (stereolithography) and targeted at hobbyists and makers is currently also in late stage development. Several prototype machines are nearing completion - please tag @MatinatorX in the Opulo Discord server if you are interested in helping or testing.
 
-### UV Exposure
+#### UV Exposure
 
 <img width="365" height="398" alt="71f0aba3-9b12-410d-bf2e-55603bfde023_removalai_preview" src="https://github.com/user-attachments/assets/b00b8bb1-aa5c-43ae-b323-154bde06962b" /><br>
 
@@ -165,7 +177,7 @@ With the top copper layer mask artwork in place and aligned, the PCB can now be 
 
 Switch to the backside of your Viagrid black and repeat this process for the bottom copper layer of the PCB, again ensuring the artwork mask is oriented correctly and not flipped.
 
-### Development
+#### Development
 
 <img width="800" alt="unknown" src="https://github.com/user-attachments/assets/bdc629a9-1f2c-47c9-af5e-edba55670015" /><br>
 
@@ -184,7 +196,7 @@ Once both sides have been exposed, remove the artwork masks from the Viagrid PCB
 
 We are now ready to etch the board!
 
-### Etching
+#### Etching
 
 <img width="800" alt="626ab9b6-d210-400a-89a5-65d3a1628efd_removalai_preview" src="https://github.com/user-attachments/assets/6f2cd390-e50e-4d9c-9af4-12e837edc4f1" /><br>
 
@@ -201,7 +213,7 @@ In both cases, etching of both sides of the Viagrid PCB can be achieved in under
 > [!NOTE]
 > FeCl3 loses it's effectiveness over time as it becomes saturated with dissolved copper and must be periodically replaced. **DO NOT POUR FERRIC CHLORIDE DOWN THE DRAIN OR OTHERWISE DISPOSE OF IMPROPERLY, ESPECIALLY USED FERRIC CHLORIDE.** Store it in an appropriate container and bring it to your local hazardous waste center - it's generally free for individuals and is sent for recycling.
 
-### Stripping
+#### Stripping
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/c0e36b46-d780-4278-8786-d461e7c3ab3b" /><br>
 
@@ -225,7 +237,7 @@ Again, there are various ways to do this, but we will go over the most accessibl
 
 Congratulations, you now have a complete, shiny, bare PCB ready to use! Any exposed copper will oxidize quickly, so it is recommended to continue on to the soldermask steps immediately if soldermask is desired, or to immediately dip the board in liquid tin to plate and protect the exposed copper. This will also provide a better soldering experience.
 
-### Soldermask & Silkscreen
+#### Soldermask & Silkscreen
 
 <img width="800" alt="imertertage" src="https://github.com/user-attachments/assets/791adbb7-95f1-4ad3-bef8-69be7d472a13" /><br>
 
@@ -235,7 +247,7 @@ Soldermask can be removed via laser or developed similar to the UV photoresist.
 
 #### *The rest of this section is a work in progress.*
 
-### Liquid Tin
+#### Liquid Tin
 
 <img height="300" alt="626ab9b6-d210-400a-89a5-65d3a1628efd_removalai_preview" src="https://github.com/user-attachments/assets/f4bf690f-d58c-4c3e-b763-4a2f8f0089f2" /><br>
 
@@ -247,6 +259,6 @@ https://mgchemicals.com/products/circuit-board-design/electroless-plating/421a-l
 
 It only takes a few minutes dipped in 421A to get a nice thick layer of tin on your copper surfaces:
 
-## CNC Machining Method
+### CNC Machining
 
-#### *This section is a work in progress.*
+#### *This section is a work in progress. Please let us know if you want to help!*
