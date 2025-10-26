@@ -135,7 +135,7 @@ To start off with, you don't have to be an electronics or chemical engineer to c
 > [!WARNING]
 > Chemical etching of any PCB does require the use of certain chemicals which can be unsafe if not handled and disposed of properly. Generally, these will be FeCl3 (ferric chloride), NaOH (sodium hydroxide, commonly known as lye) and liquid tin. Do not mix chemicals, and always wear the proper PPE and follow all handling instructions recommended by the manufacturers of the equipment and chemicals you are using!
 
-Na2CO3 (sodium carbonate) is also used, but is quite safe (it's basically just just soda ash/powder laundry detergent).
+Na2CO3 (sodium carbonate) is also used, but is quite safe (it's basically just soda ash/powder laundry detergent).
 
 Chemical etching of PCBs can be broken down into these steps:
 
