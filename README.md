@@ -196,7 +196,7 @@ We are now ready to etch the board!
 
 #### Etching
 
-![](img/chemical_etching_etching.png)<br>
+![](img/chemical_etching_etching.jpg)<br>
 
 There are various chemicals which can be used to etch PCBs, but the most common and flexible is FeCl3 (ferric-chloride), with the main downside being it will stain your skin orange for a while if you do get some on you (wash your skin properly right away if this happens - it is an acid after all!)
 
