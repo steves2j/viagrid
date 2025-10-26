@@ -152,7 +152,7 @@ Chemical etching of PCBs can be broken down into these steps:
 
 #### Photoresist and Artwork Masks
 
-![](img/chemical_etching_masking)<br>
+![](img/chemical_etching_masking.png)<br>
 
 When chemically etching PCBs, a protective layer must exist over the copper areas we wish to keep. This is accomplished with a UV-sensitive acrylic polymer film, otherwise known as a UV photoresist. Both negative and positive photoresists exist. In simple terms, negative photoresist will "harden" when exposed to UV light, so the light must hit the areas of copper we wish to keep. Positive photoresist will "soften" when exposed to UV light, so the light must hit the areas of copper we wish to remove. Both types of coatings can achieve excellent detail and resolution if properly applied and exposed, and will never be the limiting factor for the quality of your DIY PCBs. Photoresist films are capable of tenting even large holes (>= ⌀5mm) and will easily protect the vias from etching.
 
@@ -169,7 +169,7 @@ Once the artwork masks are created, we must place them on the PCB. It is easiest
 
 #### UV Exposure
 
-![](img/chemical_etching_exposure)<br>
+![](img/chemical_etching_exposure.png)<br>
 
 With the top copper layer mask artwork in place and aligned, the PCB can now be exposed to UVA light (ideally 395-405nm wavelength) to "burn" the artwork into the photoresist. The source of UV light can be just about anything, including the sun - however, underexposure, overexposure and uneven exposure can lead to more difficulty during the development steps, areas of the board which cannot be developed, uneven feature thicknesses or portions of photoresist coming off the board which should have remained. As such, it is recommended to use a controlled UV light source on a timer, so a repeatable and adjustable amount of even UV exposure can be achieved. The ideal exposure time and intensity can be found in the TDS (technical datasheet) for your chosen photoresist. However, as a general rule, for a 35µm negative photoresist, around 60 seconds of exposure with a 5W UVA source located 15cm away from the PCB is a good place to start.
 
@@ -177,7 +177,7 @@ Switch to the backside of your Viagrid black and repeat this process for the bot
 
 #### Development
 
-![](img/chemical_etching_development)<br>
+![](img/chemical_etching_development.png)<br>
 
 Once both sides have been exposed, remove the artwork masks from the Viagrid PCB. We are now ready to develop the PCB, which for most negative resists is done with a 1% Na2CO3 (sodium carbonate) to warm water solution. (For positive resists, follow the manufacturer instructions.) There are various ways to do this, but we will go over the most accessible method here:
 
@@ -196,7 +196,7 @@ We are now ready to etch the board!
 
 #### Etching
 
-![](img/chemical_etching_etching)<br>
+![](img/chemical_etching_etching.png)<br>
 
 There are various chemicals which can be used to etch PCBs, but the most common and flexible is FeCl3 (ferric-chloride), with the main downside being it will stain your skin orange for a while if you do get some on you (wash your skin properly right away if this happens - it is an acid after all!)
 
@@ -213,7 +213,7 @@ In both cases, etching of both sides of the Viagrid PCB can be achieved in under
 
 #### Stripping
 
-![](img/chemical_etching_stripping)<br>
+![](img/chemical_etching_stripping.png)<br>
 
 The process of removing the "hardened" UV photoresist is very similar to the development steps, but with 1% NaOH (sodium hydroxide/lye) to cold water solution.
 
@@ -237,7 +237,7 @@ Congratulations, you now have a complete, shiny, bare PCB ready to use! Any expo
 
 #### Soldermask & Silkscreen
 
-![](img/chemical_etching_soldermask)<br>
+![](img/chemical_etching_soldermask.png)<br>
 
 A soldermask jig and process specific for Viagrid blanks is in late-stage development, which keeps your fingers clean and provides high quality results.
 
@@ -247,7 +247,7 @@ Soldermask can be removed via laser or developed similar to the UV photoresist.
 
 #### Liquid Tin
 
-![](img/chemical_etching_liquid_tin)<br>
+![](img/chemical_etching_liquid_tin.png)<br>
 
 The recommended brand of liquid tin is MG Chemicals 421A:<br>
 https://mgchemicals.com/products/circuit-board-design/electroless-plating/421a-liquid-tin/
